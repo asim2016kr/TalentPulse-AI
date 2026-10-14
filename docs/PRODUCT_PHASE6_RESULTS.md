@@ -12,6 +12,9 @@ Public launch remains gated by the explicitly untested items below.
 - Account throttling responses now include Retry-After. Unexpected API failures
   emit only a correlation ID, without SQL, tokens, driver messages or personal data.
 - Sign-out has a bounded timeout and prevents repeat submissions.
+- Fresh hosted CI exposed an incompatible optional Snowflake pandas/Arrow extra.
+  Removed that unused extra and pinned the existing connector version; warehouse
+  access uses cursor rows/executemany and retains its existing functionality.
 - Added liveness and production configuration checks, CI, and repository credential
   and generated-artifact checks. Existing readiness check validates the read database.
 - Preserved all previous product and Python pipeline work in the GitHub source

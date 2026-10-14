@@ -12,8 +12,9 @@ soupsieve==2.8.4
 typing_extensions==4.15.0
 tzdata==2026.2
 urllib3==2.7.0
-snowflake-connector-python[pandas]
-python-dotenv
+# Warehouse code uses cursor rows/executemany, not the optional pandas/Arrow API.
+# The pandas extra requires pandas<3 and conflicts with this pipeline's pandas 3.
+snowflake-connector-python==4.7.2
 openai>=2,<3
 pydantic>=2,<3
 ftfy==6.3.1
