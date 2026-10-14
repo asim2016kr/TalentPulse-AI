@@ -1,5 +1,23 @@
 venv/
 .env
+.env.local
+.env.*.local
+product/output/
+web/node_modules/
+web/.next/
+web/tsconfig.tsbuildinfo
 __pycache__/
 *.pyc
 .vscode/
+.classification_cache/
+ingestion/output/*.manifest.json
+ingestion/output/warehouse_reload_report.json
+# Source archives, local evidence and generated reports are not application source.
+data/
+**/output/
+docs/phase3_review_decisions.json
+*.log
+.DS_Store
+coverage/
+.coverage
+.pytest_cache/

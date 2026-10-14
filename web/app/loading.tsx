@@ -1,0 +1,1 @@
+export default function Loading(){return <main id="main" className="section empty" role="status"><p className="eyebrow">TALENTPULSE</p><h2>Finding your next possibility…</h2><p>Loading opportunities.</p></main>;}
